@@ -33,11 +33,14 @@ edition = "2024"
 ib_async = "0.1.1"
 ```
 
-> [!NOTE] [The Note content inside MarkDown document  FROM HERE](https://stackoverflow.com/questions/25654845/how-can-i-create-a-text-box-for-a-note-in-markdown)
+> [!NOTE]
+> [The Note content inside MarkDown document  FROM HERE](https://stackoverflow.com/questions/25654845/how-can-i-create-a-text-box-for-a-note-in-markdown)
 <!-- -->
-> [!NOTE] [Write two separate block quotes in sequence using markdown](https://stackoverflow.com/questions/12979577/how-can-i-write-two-separate-blockquotes-in-sequence-using-markdown)
+> [!NOTE]
+> [Write two separate block quotes in sequence using markdown](https://stackoverflow.com/questions/12979577/how-can-i-write-two-separate-blockquotes-in-sequence-using-markdown)
 > <!-- -->
-> [!IMPORTANT] The TWS Client should run local
+> [!IMPORTANT]
+> The TWS Client should run local
 
 ## Test Hello World World - create by cargo init
 
@@ -50,6 +53,7 @@ cargo run
 <!--
 //! [github]: https://img.shields.io/badge/github-8da0cb?style=for-the-badge&labelColor=555555&logo=github
 -->
+
 ## Test Link Logo
 
 [![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/)
