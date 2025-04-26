@@ -46,6 +46,24 @@ ib_async = "0.1.1"
 
 > __Note__: Notice here
 
+## checked
+
+:warning: Warning: File paths may change based on releases (especially __major__ version bumps)
+
+Reference the __release__ tag or branch and _not_ the ~~master~~ branch because paths are subject to change for each release
+
+* For example:
+  * :white_check_mark: Test check Mark
+  * :white_check_mark: Test check Mark
+  * :x: Instead of: Test cross
+
+<!--
+* For example:
+  * :white_check_mark: Use: <code>https\://github.com/ryanoasis/nerd-fonts/tree/<b>v3.0.0</b>/patched-fonts/Hermit/Regular/HurmitNerdFont-Regular.otf</code>
+  * :white_check_mark: Use: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<b>0.9.0</b>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
+  * :x: Instead of: <code>https\://github.com/ryanoasis/nerd-fonts/blob/<del>master</del>/patched-fonts/Hermit/Medium/complete/Hurmit%20Medium%20Nerd%20Font%20Complete.otf</code>
+-->
+
 ## Test Hello World World - create by cargo init
 
 ```bash
