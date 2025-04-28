@@ -24,7 +24,7 @@ use log::{debug, error, info, trace, warn};
 use env_logger::{Builder, Env};
 
 fn main() {
-    initialize_logger();
+    init_logger();
 
     trace!("some trace log");
     debug!("some debug log");
@@ -33,14 +33,28 @@ fn main() {
     error!("some error log");
 }
 
-fn initialize_logger() {
+fn init_logger() {
     // The `Env` lets us tweak what the environment
     // variables to read are and what the default
     // value is if they're missing
-    let env = Env::default()
-        //.filter_or("MY_LOG_LEVEL", "trace")
-        .filter_or("MY_LOG_LEVEL", "info")
-        .write_style_or("MY_LOG_STYLE", "always");
+    // let env = Env::default()
+    //     //.filter_or("MY_LOG_LEVEL", "trace")
+    //     .filter_or("MY_LOG_LEVEL", "info")
+    //     .write_style_or("MY_LOG_STYLE", "always");
 
-    env_logger::init_from_env(env);
+    // env_logger::init_from_env(env);
+
+    env_logger::builder()
+        .format(|buf, record| {
+            writeln!(
+                buf,
+                "{}:{} {} [{}] - {}",
+                record.file().unwrap_or("unknown"),
+                record.line().unwrap_or(0),
+                chrono::Local::now().format("%Y-%m-%dT%H:%M:%S"),
+                record.level(),
+                record.args()
+            )
+        })
+        .init();
 }

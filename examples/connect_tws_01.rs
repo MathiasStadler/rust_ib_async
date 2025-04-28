@@ -5,6 +5,7 @@
 #![allow(dead_code)]
 #[allow(unused_imports)]
 use env_logger::{Builder, Env};
+#[allow(unused_imports)]
 use log::{debug, error, info, trace, warn};
 
 fn initialize_logger() {
@@ -12,8 +13,8 @@ fn initialize_logger() {
     // variables to read are and what the default
     // value is if they're missing
     let env = Env::default()
-        //.filter_or("MY_LOG_LEVEL", "trace")
-        .filter_or("MY_LOG_LEVEL", "info")
+        .filter_or("MY_LOG_LEVEL", "trace")
+        //.filter_or("MY_LOG_LEVEL", "info")
         .write_style_or("MY_LOG_STYLE", "always");
 
     env_logger::init_from_env(env);
@@ -23,9 +24,9 @@ fn main() {
     initialize_logger();
 
     info!("Hello, world!");
-    trace!("some trace log");
-    debug!("some debug log");
-    info!("some information log");
-    warn!("some warning log");
-    error!("some error log");
+    // trace!("some trace log");
+    // debug!("some debug log");
+    // info!("some information log");
+    // warn!("some warning log");
+    // error!("some error log");
 }
