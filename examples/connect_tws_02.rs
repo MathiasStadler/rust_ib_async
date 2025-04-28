@@ -16,7 +16,7 @@ fn initialize_logger() {
         .filter_or("MY_LOG_LEVEL", "trace")
         //.filter_or("MY_LOG_LEVEL", "info")
         .write_style_or("MY_LOG_STYLE", "always")
-        .format(|buf, record| {
+        .fmt(|buf, record| {
             writeln!(
                 buf,
                 "{}:{} {} [{}] - {}",
