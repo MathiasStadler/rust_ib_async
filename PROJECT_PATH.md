@@ -100,3 +100,7 @@ cargo run
 <!-- -->
 > [!CAUTION]
 > Advises about risks or negative outcomes of certain actions.
+
+## [rust examples](http://xion.io/post/code/rust-examples.html)
+
+## [env_logger](https://docs.rs/env_logger/latest/env_logger/)
